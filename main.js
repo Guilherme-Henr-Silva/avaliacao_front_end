@@ -66,6 +66,7 @@ function renderizarTarefas() {
 
         const botaoRemover = document.createElement("button"); // Botão de remover
         botaoRemover.textContent = "Remover";
+        botaoRemover.className = "remover";
         botaoRemover.addEventListener("click", () => removerTarefa(index));
 
         // Adiciona botões dentro da div
