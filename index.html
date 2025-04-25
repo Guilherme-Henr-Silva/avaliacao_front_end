@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <!-- Linkando o arquivo CSS -->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
     <div class="container">
         <h1>Lista de Tarefas</h1>
 
-        <!-- Criando formulario para adicionar as tarefas -->
-        <form id="fomulario-tarefa">
+        <!-- Formulario para adicionar novas tarefas -->
+        <form id="formulario-tarefa">
             <input type="text" id="tarefa" placeholder="Digite a tarefa" required>
             <button type="submit">Adicionar</button>
         </form>
-        <!-- Criando a lista aonde as tarefas serão mostradas -->
+
+        <!-- Criando a lista onde serão mostradas as tarefas -->
         <ul id="lista-tarefas"></ul>
     </div>
 
-
-    <script src='main.js'></script>
+    <!-- Linkando arquivo JS -->
+    <script src="main.js"></script>
 </body>
 </html>
