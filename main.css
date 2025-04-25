@@ -4,8 +4,24 @@
     padding: 0;
 }
 
+/* Estilizando o corpo da pagina */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #dfdfdf;
+    background-color: #eeeeee;
     padding: 30px;
+}
+
+/* Estilizando a classe container */
+.container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+}
+
+/* Estilizando o título da pagina */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
