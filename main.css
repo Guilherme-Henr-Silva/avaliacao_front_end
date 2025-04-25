@@ -1,26 +1,27 @@
-/* Zerando as margens e o espaçamento */
+/* Zerando as margens e os espaçamentos */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Estilizando o corpo da pagina */
+/* Estilizando o corpo da página */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #eeeeee;
-    padding: 30px;
+    padding: 20px;
 }
 
 /* Estilizando a classe container */
 .container {
-    padding: 20px;
     max-width: 500px;
     margin: auto;
     background: white;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Estilizando o título da pagina */
+/* Estilizando o titulo da pagina */
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -33,25 +34,70 @@ form {
     margin-bottom: 20px;
 }
 
-/* Estilizando campo de texto */
-input {
+/* Estilo do campo de texto */
+input[type="text"] {
     flex: 1;
     padding: 10px;
     font-size: 16px;
-    border-radius: 8px;
 }
 
-/* Estilizando o botão adicionar */
+/* Estilo do botão adicionar */
 button {
     padding: 10px 15px;
-    font-size: 20px;
-    background-color: #49ca4d;
+    font-size: 16px;
+    background-color: #00b406;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4ab44d;
+    background-color: #009d06;
+}
+
+/* Removendo as bolinhas da lista */
+ul {
+    list-style: none;
+}
+
+/* Estilo dos itens da lista */
+li {
+    background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+/* Estilo para tarefas concluídas */
+li.concluida span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Estilo dos botões de editar/remover */
+.botoes {
+    display: flex;
+    gap: 5px;
+}
+
+/* Estilo botão remover */
+.botoes .remover {
+    background-color: #f44336;
+}
+
+.botoes .remover:hover {
+    background-color: #be352b;
+}
+
+/* Estilo botão editar */
+.botoes .editar {
+    background-color: #2196F3;
+}
+
+.botoes .editar:hover {
+    background-color: #1c7ac7;
 }
